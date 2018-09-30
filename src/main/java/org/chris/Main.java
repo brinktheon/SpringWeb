@@ -3,6 +3,8 @@ package org.chris;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(args[0]);
+        MessageProvider provider = MessageFactory.getProvider();
+        MessageRender render = MessageFactory.getRender();
+        render.render();
     }
 }
